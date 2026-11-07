@@ -1,0 +1,77 @@
+
+
+
+@media screen and (max-width: 1024px) {
+    .zonetab, .zonetexte, .zonegallerie, .profile-main-container {
+        width: 95%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .stats-grid {
+        gap: 15px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+
+    
+    
+    
+    main {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    
+    .tab {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        
+       
+        width: 44% !important; 
+        height: 45px !important;
+        margin: 6px 3% !important; 
+        padding: 0 5px !important;
+        
+       
+        border: 1px solid var(--gold-elden) !important; 
+        border-radius: 4px !important; 
+        
+        
+        background-color: rgba(20, 20, 18, 0.9) !important; 
+        color: var(--gold-elden) !important; 
+        font-family: 'Georgia', serif;
+        font-size: 0.85rem !important;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        
+        
+        float: none !important;
+        box-sizing: border-box;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+        transition: all 0.2s ease;
+    }
+
+    
+    .first {
+        margin-left: 3% !important; 
+    }
+
+    
+    .tab:active, .tab:focus {
+        background-color: var(--gold-elden) !important;
+        color: #121212 !important;
+        border-color: var(--gold-light) !important;
+        box-shadow: 0 0 10px rgba(197, 160, 89, 0.5);
+    }
+
+    
+    .zonetab {
+        margin-top: 15px !important; 
+        border: 2px solid var(--gold-elden) !important; 
+        border-radius: 6px;
+    }
+}

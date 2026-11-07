@@ -1,0 +1,17 @@
+/*VARIABLE*/
+:root {
+    --gold-elden: #c5a059;
+    --gold-light: #e5c079;
+    --bg-dark-card: #121212;
+    --bg-dark-transparent: rgba(20, 20, 18, 0.7);
+    --bg-grey-header: rgb(69, 70, 62);
+    --bg-sidenav: rgb(45, 46, 40);
+    --btn-green: #04AA6D;
+    --btn-green-hover: #038d55;
+    
+    /* Couleurs de Raretés */
+    --rarity-legendaire: #c5a059;
+    --rarity-epique: #730a96;
+    --rarity-rare: #0084f1;
+    --rarity-commun: #4f4e4e;
+}

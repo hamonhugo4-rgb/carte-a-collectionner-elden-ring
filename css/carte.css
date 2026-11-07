@@ -1,0 +1,180 @@
+.zonegallerie {
+    background-color: var(--bg-grey-header);
+    height: auto;
+    width: 90%;
+    padding: 10px;
+    margin-top: 150px;
+    margin-left: 50px;
+    border: 0.5rem solid;
+    clear: both;
+}
+
+#mon-portfolio-galerie {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    justify-items: center;
+}
+
+.gallery-item-wrapper a {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+}
+
+/* Filtres */
+.filter-container {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin: 30px auto;
+    padding: 10px;
+    flex-wrap: wrap;
+}
+
+.filter-btn {
+    background-color: var(--bg-dark-transparent); 
+    color: var(--gold-elden); 
+    border: 1px solid #4f4e4e; 
+    padding: 10px 24px;
+    font-family: 'Georgia', serif;
+    font-size: 0.95rem;
+    font-weight: bold;
+    text-transform: uppercase; 
+    letter-spacing: 1px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.3s ease; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.4);
+}
+
+.filter-btn:hover {
+    color: #ffffff;
+    border-color: var(--gold-elden); 
+    background-color: rgba(197, 160, 89, 0.15); 
+    box-shadow: 0 0 10px rgba(197, 160, 89, 0.4); 
+    transform: translateY(-2px); 
+}
+
+.filter-btn.active {
+    color: #121212; 
+    background-color: var(--gold-elden); 
+    border-color: var(--gold-light);
+    box-shadow: 0 0 15px rgba(197, 160, 89, 0.6); 
+    transform: translateY(0);
+}
+
+.filter-btn:focus {
+    outline: none;
+}
+
+/* Design des Cartes */
+.elden-card {
+    width: 320px;
+    height: 480px;
+    border-radius: 20px;
+    padding: 16px;
+    background-color: var(--bg-dark-card);       
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.8);
+    margin: 0 auto;               
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-sizing: border-box;
+}
+
+.card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.card-name {
+    color: #ffffff;
+    font-family: 'Georgia', serif;
+    font-weight: bold;
+    font-size: 1.1rem;       
+    padding: 4px 8px;
+    border-radius: 6px;
+    background-color: #1a1a1a;
+}
+
+.card-rarity {   
+    font-family: 'Georgia', serif;
+    font-size: 0.85rem;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.card-image-container {
+    width: 100%;
+    height: 200px;
+    border: 2px solid #333333;
+    border-radius: 12px;
+    overflow: hidden;
+    background-color: #000000;
+}
+
+.card-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+}
+
+.card-description-container {
+    width: 100%;
+    height: 130px;
+    border-radius: 12px;
+    padding: 10px;
+    box-sizing: border-box;
+    background-color: #1a1a1a;       
+    overflow-y: auto; 
+}
+
+.card-text {
+    margin: 0;
+    font-family: 'Arial', sans-serif; 
+    font-size: 12px; 
+    line-height: 1.4;
+    color: #e0e0e0;                  
+}
+
+.remove-fav-btn {
+    background: none;
+    border: none;
+    color: #ff4500;
+    font-size: 1.4rem;
+    cursor: pointer;
+    padding: 0 5px;
+    transition: transform 0.2s;
+    z-index: 10;
+}
+
+.remove-fav-btn:hover {
+    transform: scale(1.2);
+}
+
+
+.legendaire { border: 2px solid var(--rarity-legendaire); color: var(--rarity-legendaire); }
+.epique      { border: 2px solid var(--rarity-epique); color: var(--rarity-epique); }
+.rare        { border: 2px solid var(--rarity-rare); color: var(--rarity-rare); }
+.commun      { border: 2px solid var(--rarity-commun); color: var(--rarity-commun); }
+
+
+.mySwiper { overflow: visible !important; width: 100%; }
+.swiper-slide {
+    width: 320px !important;  
+    height: 480px !important; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: none !important; 
+}
+.espace {
+    display: none !important;
+    margin-top: 50px; 
+    padding-top: 40px;       
+    padding-bottom: 60px;    
+}

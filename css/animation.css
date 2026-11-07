@@ -1,0 +1,53 @@
+@keyframes heart {
+    0% { transform: scale(1.5); }
+    50% { transform: scale(2); }
+    100% { transform: scale(1.5); }
+}
+
+
+#character-anim {
+    position: absolute;
+    bottom: 30px; 
+    left: -150px; 
+    width: 90px;  
+    height: auto;
+    z-index: 20;  
+    opacity: 0;   
+    image-rendering: pixelated; 
+    transform-origin: center;
+}
+
+#character-anim.run-anim {
+    animation: roulade 2.5s linear forwards; 
+}
+
+@keyframes roulade {
+    0% { left: -150px; opacity: 0; transform: scaleX(1); }
+    10% { opacity: 1; }
+    40% { left: 50%; transform: translateX(-50%) scaleX(1); }
+    60% { left: 50%; transform: translateX(-50%) scaleX(1); }
+    90% { left: -150px; transform: scaleX(-1); opacity: 1; }
+    100% { left: -150px; opacity: 0; transform: scaleX(-1); }
+}
+
+#character-torrent {
+    position: fixed; 
+    bottom: 50px;
+    left: -200px;   
+    width: 150px;
+    z-index: 2000; 
+    opacity: 0;
+    image-rendering: pixelated;
+    pointer-events: none;
+}
+
+#character-torrent.invoke-anim {
+    animation: chargeTorrent 2s ease-in-out forwards;
+}
+
+@keyframes chargeTorrent {
+    0% { left: -200px; opacity: 0; }
+    10% { opacity: 1; }
+    90% { opacity: 1; }
+    100% { left: 105vw; opacity: 0; }
+}

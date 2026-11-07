@@ -1,0 +1,11 @@
+{
+    "name": "hamon/sites",
+    "autoload": {
+        "psr-4": {
+            "Hamon\\Sites\\": "src/"
+        }
+    },
+    "require": {
+        "guzzlehttp/guzzle": "^7.0"
+    }
+}
